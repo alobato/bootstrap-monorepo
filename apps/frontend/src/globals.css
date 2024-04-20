@@ -1,0 +1,19 @@
+/* https://flaviocopes.com/fix-unknown-at-rule-tailwind/ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --ring: 215 20.2% 65.1%;
+  }
+  .dark {
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --ring: 216 34% 17%;
+  }
+}
