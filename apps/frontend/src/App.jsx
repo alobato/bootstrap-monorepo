@@ -6,6 +6,8 @@ import { ThemeProvider as TailwindThemeProvider } from './components/theme-provi
 
 import Lab from './containers/Lab'
 
+import './App.css'
+
 function App() {
   return (
     <BrowserRouter>
