@@ -6,11 +6,13 @@ import { cn } from '@/lib/utils'
 
 const Accordion = AccordionPrimitive.Root
 
+// eslint-disable-next-line
 const AccordionItem = React.forwardRef(({ className, ...props }, ref) => (
   <AccordionPrimitive.Item ref={ref} className={cn('border-b', className)} {...props} />
 ))
 AccordionItem.displayName = 'AccordionItem'
 
+// eslint-disable-next-line
 const AccordionTrigger = React.forwardRef(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Header className="flex">
     <AccordionPrimitive.Trigger
@@ -27,6 +29,7 @@ const AccordionTrigger = React.forwardRef(({ className, children, ...props }, re
 ))
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
 
+// eslint-disable-next-line
 const AccordionContent = React.forwardRef(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
